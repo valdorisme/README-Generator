@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const questions = inquirer.prompt([
+const questions = [
         {
             type: "input",
             name: "author",
@@ -58,7 +58,7 @@ const questions = inquirer.prompt([
             name: "contribution",
             message: "What does the user need to know about contributing to the repo?"
         }
-    ])
+    ]
 
     // console.log(inquirer)
 // TODO: Create a function to write README file
